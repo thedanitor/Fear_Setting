@@ -1,0 +1,30 @@
+#adorable-avatar {
+    padding-top: 10px;
+    text-align: left;
+}
+
+#myProgress {
+    width: 100%;
+    background-color: #2d4059;
+    margin: 10px;
+}
+  
+#myBar {
+    width: 0%;
+    height: 20px;
+    background-color: #ffd460;
+}
+
+h1, p, .bigFear, #changeFear1, .chosenFear, #saveFear{
+    margin-left: 20px;
+}
+
+.uk-button-primary {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.wellDoneHeader {
+    text-align: center;
+    font-family: courier,arial,helvetica;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fear Setting</title>
+    <link rel="stylesheet" href="Develop/Style/normalize.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.4.0/dist/css/uikit.min.css"/>
+    <link rel="stylesheet" href="Develop/Style/style.css" />
+    <link rel="stylesheet" href="Develop/Style/challenge.css" />
+    <link rel="" href="userGuide.html"/>
+  </head>
+  <body>
+    <nav class="uk-navbar-container" uk-navbar>
+      <div class="uk-navbar" id="navBar1"> <!--Adding an ID for styling in css -->
+        <div class="uk-navbar-left">
+          <img src="https://img.icons8.com/carbon-copy/100/000000/ghost.png"/>
+        </div>
+        <div class="uk-navbar-right">
+          <div class = "uk-navbar-item"></div>
+            <ul class="uk-navbar-nav" id="navBarLinks">
+              <li><a href="index.html">Home</a></li>
+              <li><a id="createUser" href="#usernameModal">Create an Account</a></li>
+              <li><a href="userGuide.html">User Guide</a></li>
+              <li class="uk-active"><a href="challenge.html">Challenge Yourself</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div id="usernameModal" class="modal">
+      <form class="modal-content" action="/action_page.php">
+        <div class="container">
+          <p>Please enter a username.</p>
+          <hr>
+          <label for="username"><b>Username</b></label>
+          <input id="usernameInput" type="text" placeholder="Enter username" name="username">
+          <div class="clearfix">
+            <button type="button" class="cancelbtn uk-button">Cancel</button>
+            <button type="button" class="saveUserbtn uk-button">Save Username</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <h1>Challenge yourself with a Fear-Setting Strategy</h1>
+    <p>What is your worst, biggest fear? Help yourself out by diving deep into it.</p>
+    <input class="uk-input bigFear" id="form-h-text" type="text" placeholder="Biggest Fear">
+    <button class="uk-button uk-button-primary" id="changeFear1">Change Your Fear</button>
+
+    <hr class="uk-divider-icon">
+
+    <h2 class = "chosenFear">Your Fear Here</h2>
+    <button class="uk-button uk-button-primary" id="saveFear">Save Fear</button>
+
+    <div class = "uk-container">
+      <div class = "uk-child-width-1-2 uk-grid" uk-grid>
+        <div class = "uk-first-column">
+          <div class = "uk-panel">
+            <h4>Define: List the worst things that could happen</h4>
+            <ul id="defineList1">
+
+            </ul>
+            <input class="uk-input newWorst" id="form-h-text" type="text" placeholder="Bad thing">
+            <button class="uk-button uk-button-primary" id="addThing1">Add Thing</button>
+          </div>
+        </div>
+        <div class = "second-column">
+          <div class = "uk-panel">
+            <h4>Prevent: List how you can stop the above bad things</h4>
+            <ul id="preventList1">
+
+            </ul>
+            <input class="uk-input newPrevention" id="form-h-text" type="text" placeholder="How to">
+            <button class="uk-button uk-button-primary" id="addPrevention1">Add Prevention</button>
+          </div>
+        </div>
+      </div>
+      <div class = "uk-child-width-1-2 uk-grid" uk-grid>
+        <div class = "uk-first-column">
+          <div class = "uk-panel">
+            <h4>Repair: If the worst happens, list how to repair each bad thing.</h4>
+            <ul id="repairList1">
+
+            </ul>
+            <input class="uk-input newRepair" id="form-h-text" type="text" placeholder="How to">
+            <button class="uk-button uk-button-primary" id="addHow1">Add how to</button>
+          </div>
+        </div>
+        <div class = "second-column">
+          <div class = "uk-panel">
+            <h4>Benefits: List all possible benefits from taking this action</h4>
+            <ul id="benefitsList1">
+              
+            </ul>
+            <input class="uk-input newBenefit" id="form-h-text" type="text" placeholder="Benefit">
+            <button class="uk-button uk-button-primary" id="addBenefit1">Add Benefit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="uk-divider-icon">
+
+    <div class = "celebration">
+      <div class = "uk-container headerPosition">
+        <div class = "uk-child-width-1-2 uk-grid" uk-grid>
+          <div class = "uk-first-column">
+            <div class = "uk-panel gif">
+
+            </div>
+          </div>
+          <div class = "second-column">
+            <div class = "uk-panel quote">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <form action="inviteFriends.html" method="get" target="_blank">
+      <a class="uk-button uk-button-default" a href="inviteFriends.html">Share With Friends</a>
+    </form>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="Develop/config.js"></script>
+    <script src="Develop/script.js"></script>
+    <script src="Develop/script2.js"></script>
+    <script src="Develop/script3.js"></script>
+  </body>
+</html>

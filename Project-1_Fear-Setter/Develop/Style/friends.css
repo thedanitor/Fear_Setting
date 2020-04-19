@@ -1,0 +1,68 @@
+
+
+body {
+  background-image: url("Background-1.png") ;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 100%;
+}
+
+#userGuidelist {
+  justify-content: left;
+
+}
+
+#navBar1 {
+  background-color: #762766;
+}
+
+#shareButtons {
+  margin-top: 100px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  padding-top: 20px;
+  padding-bottom: 40px
+}
+
+
+p {
+  text-align: center;
+}
+
+.cancelbtn, .saveUserbtn {
+  color: white;
+  background-color: #762766;
+}
+
+.clearfix {
+  padding-top: 10px;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 10px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 50%; /* Full width */
+  height: 50%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
